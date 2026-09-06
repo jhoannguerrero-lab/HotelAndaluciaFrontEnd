@@ -140,7 +140,6 @@
 }
 
 /* Contenido principal */
-/* ---------- Contenido principal ---------- */
 .main-content {
     flex: 1;
     min-width: 0;
@@ -198,4 +197,39 @@
     justify-content: space-between;
     flex-wrap: wrap;
     gap: var(--space-2);
+}
+
+/* Responsivo*/
+@media (max-width: 900px) {
+    .app-shell {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        flex-direction: row;
+        align-items: center;
+        padding: var(--space-3) var(--space-4);
+    }
+
+    .sidebar__brand {
+        margin-bottom: 0;
+        padding-bottom: 0;
+        border-bottom: none;
+    }
+
+    .sidebar__section-label,
+    .sidebar__footer {
+        display: none;
+    }
+
+    .nav-menu {
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-left: auto;
+    }
+
+    .page-body {
+        padding: var(--space-4);
+    }
 }
