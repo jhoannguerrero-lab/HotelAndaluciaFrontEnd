@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Habitaciones - Hotel Andalucía</title>
+    <meta name="description" content="Listado de habitaciones del Hotel Andalucía.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/pages.css">
+</head>
+
+<body>
+
+    <div class="app-shell">
+
+        <aside class="sidebar">
+            <div class="sidebar__brand">
+                <div class="sidebar__logo" aria-hidden="true">HA</div>
+                <div class="sidebar__title">Hotel Andalucía<small>Panel administrativo</small></div>
+            </div>
+
+            <p class="sidebar__section-label">Principal</p>
+            <nav class="nav-menu" aria-label="Menú principal">
+                <a class="nav-menu__link" href="dashboard.html"><span class="nav-menu__icon">🏠</span> Dashboard</a>
+            </nav>
+
+            <p class="sidebar__section-label">Habitaciones</p>
+            <nav class="nav-menu" aria-label="Menú de habitaciones">
+                <a class="nav-menu__link is-active" href="habitaciones.html"><span class="nav-menu__icon">🛏️</span> Ver
+                    habitaciones</a>
+                <a class="nav-menu__link" href="registrar-habitacion.html"><span class="nav-menu__icon">➕</span>
+                    Registrar habitación</a>
+            </nav>
+
+            <p class="sidebar__section-label">Reservas</p>
+            <nav class="nav-menu" aria-label="Menú de reservas">
+                <a class="nav-menu__link" href="reservas.html"><span class="nav-menu__icon">📖</span> Ver reservas</a>
+                <a class="nav-menu__link" href="registrar-reservas.html"><span class="nav-menu__icon">➕</span> Registrar
+                    reserva</a>
+            </nav>
+
+            <div class="sidebar__footer">
+                <div class="sidebar__user">
+                    <div class="sidebar__avatar" aria-hidden="true">CV</div>
+                    <div class="sidebar__user-info">Carla Vásquez<br><small>Recepción</small></div>
+                </div>
+                <a class="logout-link" href="login.html">Cerrar sesión</a>
+            </div>
+        </aside>
+
+        <div class="main-content">
+
+            <header class="topbar">
+                <span class="topbar__breadcrumb">Panel administrativo / Habitaciones</span>
+                <a href="registrar-habitacion.html" class="btn btn-accent btn-sm">+ Registrar habitación</a>
+            </header>
+
+            <main class="page-body">
+                <div class="page-header">
+                    <div>
+                        <h1>Habitaciones</h1>
+                        <p>Listado general de las habitaciones registradas en el hotel y su estado actual.</p>
+                    </div>
+                </div>
+
+                <form class="filter-bar" aria-label="Filtros de habitaciones">
+                    <div class="field">
+                        <label for="filtro-tipo">Tipo</label>
+                        <select id="filtro-tipo" name="tipo" title="Filtrar habitaciones por tipo">
+                            <option value="">Todos</option>
+                            <option value="individual">Individual</option>
+                            <option value="doble">Individual con baño privado</option>
+                            <option value="doble-mar">Doble</option>
+                            <option value="suite">Suite Familiar</option>
+                        </select>
+                    </div>
+                    <div class="field">
+                        <label for="filtro-estado">Estado</label>
+                        <select id="filtro-estado" name="estado" title="Filtrar habitaciones por estado">
+                            <option value="">Todos</option>
+                            <option value="disponible">Disponible</option>
+                            <option value="ocupada">Ocupada</option>
+                            <option value="mantenimiento">Mantenimiento</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-outline" title="Aplicar filtros de habitaciones">Filtrar</button>
+                </form>
+
+                <section class="table-wrapper" aria-label="Tabla de habitaciones">
+                    <table class="data-table">
+                        <caption>18 habitaciones registradas en total</caption>
+                        <thead>
+                            <tr>
+                                <th scope="col">N.°</th>
+                                <th scope="col">Tipo</th>
+                                <th scope="col">Piso</th>
+                                <th scope="col">Capacidad</th>
+                                <th scope="col">Precio / noche</th>
+                                <th scope="col">Estado</th>
+                                <th scope="col">Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>101</td>
+                                <td>Individual</td>
+                                <td>1</td>
+                                <td>1 persona</td>
+                                <td>Bs 220</td>
+                                <td><span class="badge badge-danger">Ocupada</span></td>
+                                <td class="cell-actions">
+                                    <a href="#" class="btn btn-outline btn-sm" title="Editar habitación">Editar</a>
+                                    <a href="#" class="btn btn-outline btn-sm" title="Eliminar habitación">Eliminar</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>102</td>
+                                <td>Individual</td>
+                                <td>1</td>
+                                <td>1 persona</td>
+                                <td>Bs 220</td>
+                                <td><span class="badge badge-success">Disponible</span></td>
+                                <td class="cell-actions">
+                                    <a href="#" class="btn btn-outline btn-sm">Editar</a>
+                                    <a href="#" class="btn btn-outline btn-sm">Eliminar</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>110</td>
+                                <td>Doble</td>
+                                <td>1</td>
+                                <td>2 personas</td>
+                                <td>Bs 340</td>
+                                <td><span class="badge badge-info">Limpieza</span></td>
+                                <td class="cell-actions">
+                                    <a href="#" class="btn btn-outline btn-sm">Editar</a>
+                                    <a href="#" class="btn btn-outline btn-sm">Eliminar</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>203</td>
+                                <td>Doble</td>
+                                <td>2</td>
+                                <td>2 personas</td>
+                                <td>Bs 340</td>
+                                <td><span class="badge badge-danger">Ocupada</span></td>
+                                <td class="cell-actions">
+                                    <a href="#" class="btn btn-outline btn-sm">Editar</a>
+                                    <a href="#" class="btn btn-outline btn-sm">Eliminar</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>205</td>
+                                <td>Doble</td>
+                                <td>2</td>
+                                <td>2 personas</td>
+                                <td>Bs 340</td>
+                                <td><span class="badge badge-success">Disponible</span></td>
+                                <td class="cell-actions">
+                                    <a href="#" class="btn btn-outline btn-sm">Editar</a>
+                                    <a href="#" class="btn btn-outline btn-sm">Eliminar</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>305</td>
+                                <td>Suite Familiar</td>
+                                <td>3</td>
+                                <td>4 personas</td>
+                                <td>Bs 720</td>
+                                <td><span class="badge badge-danger">Ocupada</span></td>
+                                <td class="cell-actions">
+                                    <a href="#" class="btn btn-outline btn-sm">Editar</a>
+                                    <a href="#" class="btn btn-outline btn-sm">Eliminar</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>307</td>
+                                <td>Suite Familiar</td>
+                                <td>3</td>
+                                <td>4 personas</td>
+                                <td>Bs 720</td>
+                                <td><span class="badge badge-warning">Mantenimiento</span></td>
+                                <td class="cell-actions">
+                                    <a href="#" class="btn btn-outline btn-sm">Editar</a>
+                                    <a href="#" class="btn btn-outline btn-sm">Eliminar</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>108</td>
+                                <td>Individual</td>
+                                <td>1</td>
+                                <td>1 persona</td>
+                                <td>Bs 220</td>
+                                <td><span class="badge badge-success">Disponible</span></td>
+                                <td class="cell-actions">
+                                    <a href="#" class="btn btn-outline btn-sm">Editar</a>
+                                    <a href="#" class="btn btn-outline btn-sm">Eliminar</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+            </main>
+
+            <footer class="site-footer">
+                <span>© 2026 Hotel Andalucía</span>
+            </footer>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

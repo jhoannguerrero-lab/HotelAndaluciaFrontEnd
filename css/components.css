@@ -1,0 +1,317 @@
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-2);
+    padding: var(--space-3) var(--space-5);
+    border-radius: var(--radius-sm);
+    border: 1px solid transparent;
+    font-size: 0.92rem;
+    font-weight: 600;
+    transition: transform 0.1s ease, box-shadow 0.15s ease, background-color 0.15s ease;
+}
+
+.btn:active {
+    transform: translateY(1px);
+}
+
+.btn-primary {
+    background-color: var(--color-blue-800);
+    color: var(--color-whitewash-100);
+}
+
+.btn-primary:hover {
+    background-color: var(--color-blue-700);
+}
+
+.btn-accent {
+    background-color: var(--color-terracotta-500);
+    color: var(--color-blue-900);
+}
+
+.btn-accent:hover {
+    background-color: var(--color-terracotta-400);
+}
+
+.btn-outline {
+    background-color: transparent;
+    border-color: var(--color-border);
+    color: var(--color-text);
+}
+
+.btn-outline:hover {
+    border-color: var(--color-blue-700);
+    color: var(--color-blue-700);
+}
+
+.btn-block {
+    width: 100%;
+}
+
+.btn-sm {
+    padding: var(--space-1) var(--space-3);
+    font-size: 0.8rem;
+}
+
+/* Formulario */
+.form-card {
+    max-width: 760px;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-4) var(--space-5);
+}
+
+.form-grid .field-full {
+    grid-column: 1 / -1;
+}
+
+@media (max-width: 700px) {
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+}
+
+.field label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--color-blue-900);
+}
+
+.field .hint {
+    font-size: 0.78rem;
+    color: var(--color-text-muted);
+    font-weight: 400;
+}
+
+.field input,
+.field select,
+.field textarea {
+    padding: var(--space-3);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    background-color: var(--color-bg);
+}
+
+.field input:focus,
+.field select:focus,
+.field textarea:focus {
+    border-color: var(--color-blue-700);
+    background-color: var(--color-surface);
+}
+
+.field textarea {
+    resize: vertical;
+    min-height: 90px;
+}
+
+fieldset.field-group {
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    padding: var(--space-4);
+    grid-column: 1 / -1;
+}
+
+fieldset.field-group legend {
+    padding: 0 var(--space-2);
+    font-weight: 600;
+    color: var(--color-blue-900);
+    font-size: 0.9rem;
+}
+
+.radio-group,
+.checkbox-group {
+    display: flex;
+    gap: var(--space-4);
+    flex-wrap: wrap;
+}
+
+.radio-option,
+.checkbox-option {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    font-size: 0.9rem;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: var(--space-3);
+    margin-top: var(--space-5);
+    padding-top: var(--space-4);
+    border-top: 1px solid var(--color-border);
+}
+
+/* layout de dos columnas del dashboard*/
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: 1.6fr 1fr;
+    gap: var(--space-5);
+}
+
+@media (max-width: 900px) {
+    .dashboard-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.card-title {
+    font-family: var(--font-heading);
+    font-size: 1.1rem;
+    color: var(--color-blue-900);
+    margin-bottom: var(--space-4);
+}
+
+/* Tarjetas*/
+.card {
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-card);
+}
+
+.card-body {
+    padding: var(--space-5);
+}
+
+/*KPI*/
+.stat-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--space-4);
+    margin-bottom: var(--space-6);
+}
+
+.stat-card {
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    padding: var(--space-5);
+    box-shadow: var(--shadow-card);
+}
+
+.stat-card__label {
+    font-size: 0.8rem;
+    color: var(--color-text-muted);
+    margin-bottom: var(--space-2);
+}
+
+.stat-card__value {
+    font-family: var(--font-heading);
+    font-size: 1.9rem;
+    color: var(--color-blue-900);
+}
+
+.stat-card__delta {
+    font-size: 0.78rem;
+    margin-top: var(--space-2);
+    color: var(--color-success-text);
+}
+
+.stat-card__delta.is-negative {
+    color: var(--color-danger-text);
+}
+
+@media (max-width: 900px) {
+    .stat-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 560px) {
+    .stat-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/*  Tablas */
+.table-wrapper {
+    overflow-x: auto;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    background-color: var(--color-surface);
+}
+
+.data-table {
+    min-width: 100%;
+}
+
+.data-table caption {
+    text-align: left;
+    padding: var(--space-4) var(--space-5) 0;
+    font-size: 0.85rem;
+    color: var(--color-text-muted);
+}
+
+.data-table thead th {
+    text-align: left;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-text-muted);
+    background-color: var(--color-whitewash-100);
+    padding: var(--space-3) var(--space-4);
+    border-bottom: 1px solid var(--color-border);
+}
+
+.data-table tbody td {
+    padding: var(--space-3) var(--space-4);
+    border-bottom: 1px solid var(--color-border);
+    font-size: 0.9rem;
+}
+
+.data-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.data-table tbody tr:hover {
+    background-color: var(--color-whitewash-100);
+}
+
+.cell-muted {
+    color: var(--color-text-muted);
+}
+
+.cell-actions {
+    display: flex;
+    gap: var(--space-2);
+    white-space: nowrap;
+}
+
+/*Badges de estado*/
+.badge {
+    display: inline-block;
+    padding: var(--space-1) var(--space-3);
+    border-radius: 999px;
+    font-size: 0.72rem;
+    font-weight: 600;
+}
+
+.badge-success {
+    background-color: var(--color-success-bg);
+    color: var(--color-success-text);
+}
+
+.badge-warning {
+    background-color: var(--color-warning-bg);
+    color: var(--color-warning-text);
+}
+
+.badge-danger {
+    background-color: var(--color-danger-bg);
+    color: var(--color-danger-text);
+}
+
+.badge-info {
+    background-color: var(--color-info-bg);
+    color: var(--color-info-text);
+}
