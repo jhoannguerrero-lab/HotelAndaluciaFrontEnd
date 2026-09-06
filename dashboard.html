@@ -78,7 +78,7 @@
                     </div>
                     <div class="stat-card">
                         <p class="stat-card__label">Reservas activas</p>
-                        <p class="stat-card__value">12</p>
+                        <p class="stat-card__value">6</p>
                         <p class="stat-card__delta">+3 respecto a ayer</p>
                     </div>
                     <div class="stat-card">
@@ -92,9 +92,55 @@
                         <p class="stat-card__delta is-negative">2 check-outs pendientes</p>
                     </div>
                 </section>
-
-
                 <div class="dashboard-grid">
+
+                    <!--Reservas recientes -->
+                    <section class="card" aria-label="Reservas recientes">
+                        <div class="card-body">
+                            <h2 class="card-title">Reservas recientes</h2>
+                            <div class="table-wrapper">
+                                <table class="data-table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Huésped</th>
+                                            <th scope="col">Habitación</th>
+                                            <th scope="col">Check-in</th>
+                                            <th scope="col">Estado</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>María Fernanda Rojas</td>
+                                            <td>203 · Doble</td>
+                                            <td>05/09/2026</td>
+                                            <td><span class="badge badge-success">Confirmada</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Jorge Antonio Salazar</td>
+                                            <td>101 · Individual</td>
+                                            <td>05/09/2026</td>
+                                            <td><span class="badge badge-warning">Pendiente</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Familia Quispe Mamani</td>
+                                            <td>305 · Suite Familiar</td>
+                                            <td>06/09/2026</td>
+                                            <td><span class="badge badge-success">Confirmada</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Ana Lucía Fernández</td>
+                                            <td>110 · Doble</td>
+                                            <td>04/09/2026</td>
+                                            <td><span class="badge badge-info">Finalizada</span></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <p style="margin-top: var(--space-4);">
+                                <a href="reservas.html" class="btn btn-outline btn-sm">Ver todas las reservas →</a>
+                            </p>
+                        </div>
+                    </section>
 
                     <section class="card" aria-label="Ocupación por tipo de habitación">
                         <div class="card-body">
