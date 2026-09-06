@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar habitación - Hotel Andalucía</title>
+    <meta name="description" content="Formulario para registrar una nueva habitación en el Hotel Andalucía.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/pages.css">
+</head>
+
+<body>
+
+    <div class="app-shell">
+
+        <aside class="sidebar">
+            <div class="sidebar__brand">
+                <div class="sidebar__logo" aria-hidden="true">HA</div>
+                <div class="sidebar__title">Hotel Andalucía<small>Panel administrativo</small></div>
+            </div>
+
+            <p class="sidebar__section-label">Principal</p>
+            <nav class="nav-menu" aria-label="Menú principal">
+                <a class="nav-menu__link" href="dashboard.html"><span class="nav-menu__icon">🏠</span> Dashboard</a>
+            </nav>
+
+            <p class="sidebar__section-label">Habitaciones</p>
+            <nav class="nav-menu" aria-label="Menú de habitaciones">
+                <a class="nav-menu__link" href="habitaciones.html"><span class="nav-menu__icon">🛏️</span> Ver
+                    habitaciones</a>
+                <a class="nav-menu__link is-active" href="registrar-habitacion.html"><span
+                        class="nav-menu__icon">➕</span> Registrar habitación</a>
+            </nav>
+
+            <p class="sidebar__section-label">Reservas</p>
+            <nav class="nav-menu" aria-label="Menú de reservas">
+                <a class="nav-menu__link" href="reservas.html"><span class="nav-menu__icon">📖</span> Ver reservas</a>
+                <a class="nav-menu__link" href="registrar-reserva.html"><span class="nav-menu__icon">➕</span> Registrar
+                    reserva</a>
+            </nav>
+
+            <div class="sidebar__footer">
+                <div class="sidebar__user">
+                    <div class="sidebar__avatar" aria-hidden="true">CV</div>
+                    <div class="sidebar__user-info">Carla Vásquez<br><small>Recepción</small></div>
+                </div>
+                <a class="logout-link" href="login.html">Cerrar sesión</a>
+            </div>
+        </aside>
+
+        <div class="main-content">
+
+            <header class="topbar">
+                <span class="topbar__breadcrumb">Panel administrativo / Habitaciones / Registrar</span>
+            </header>
+
+            <main class="page-body">
+                <div class="page-header">
+                    <div>
+                        <h1>Registrar habitación</h1>
+                        <p>Completa el formulario para dar de alta una nueva habitación en el sistema.</p>
+                    </div>
+                </div>
+                <section class="card form-card">
+                    <div class="card-body">
+                        <form class="form-grid" action="habitaciones.html" novalidate>
+
+                            <div class="field">
+                                <label for="numero">Número de habitación</label>
+                                <input type="text" id="numero" name="numero" placeholder="Ej. 204" required>
+                            </div>
+
+                            <div class="field">
+                                <label for="piso">Piso</label>
+                                <input type="number" id="piso" name="piso" min="1" max="10" placeholder="Ej. 2"
+                                    required>
+                            </div>
+
+                            <div class="field">
+                                <label for="tipo">Tipo de habitación</label>
+                                <select id="tipo" name="tipo" required>
+                                    <option value="">Selecciona un tipo</option>
+                                    <option value="individual">Individual</option>
+                                    <option value="doble">Doble</option>
+                                    <option value="doble-mar">Doble Vista al Mar</option>
+                                    <option value="suite">Suite Familiar</option>
+                                </select>
+                            </div>
+
+                            <div class="field">
+                                <label for="capacidad">Capacidad</label>
+                                <select id="capacidad" name="capacidad" required>
+                                    <option value="">Selecciona la capacidad</option>
+                                    <option value="1">1 persona</option>
+                                    <option value="2">2 personas</option>
+                                    <option value="3">3 personas</option>
+                                    <option value="4">4 personas</option>
+                                </select>
+                            </div>
+
+                            <div class="field">
+                                <label for="precio">Precio por noche (Bs)</label>
+                                <input type="number" id="precio" name="precio" min="0" step="10" placeholder="Ej. 480"
+                                    required>
+                            </div>
+
+                            <div class="field">
+                                <label for="estado">Estado</label>
+                                <select id="estado" name="estado" required>
+                                    <option value="disponible">Disponible</option>
+                                    <option value="ocupada">Ocupada</option>
+                                    <option value="mantenimiento">Mantenimiento</option>
+                                </select>
+                            </div>
+
+                            <fieldset class="field-group">
+                                <legend>Comodidades</legend>
+                                <div class="checkbox-group">
+                                    <span class="checkbox-option">
+                                        <input type="checkbox" id="wifi" name="comodidades" value="wifi">
+                                        <label for="wifi">Wi-Fi</label>
+                                    </span>
+                                    <span class="checkbox-option">
+                                        <input type="checkbox" id="vista-mar" name="comodidades" value="vista-mar">
+                                        <label for="vista-mar">Vista al mar</label>
+                                    </span>
+                                    <span class="checkbox-option">
+                                        <input type="checkbox" id="minibar" name="comodidades" value="minibar">
+                                        <label for="minibar">Minibar</label>
+                                    </span>
+                                    <span class="checkbox-option">
+                                        <input type="checkbox" id="balcon" name="comodidades" value="balcon">
+                                        <label for="balcon">Balcón</label>
+                                    </span>
+                                </div>
+                            </fieldset>
+
+                            <div class="field field-full">
+                                <label for="descripcion">Descripción <span class="hint">(opcional)</span></label>
+                                <textarea id="descripcion" name="descripcion"
+                                    placeholder="Detalles adicionales sobre la habitación..."></textarea>
+                            </div>
+
+                            <div class="form-actions field-full">
+                                <a href="habitaciones.html" class="btn btn-outline">Cancelar</a>
+                                <button type="submit" class="btn btn-primary">Guardar habitación</button>
+                            </div>
+
+                        </form>
+                    </div>
+                </section>
+            </main>
+
+            <footer class="site-footer">
+                <span>© 2026 Hotel Andalucía</span>
+            </footer>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
