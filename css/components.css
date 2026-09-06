@@ -131,3 +131,35 @@ fieldset.field-group legend {
     color: var(--color-teal-900);
     font-size: 0.9rem;
 }
+
+/* layout de dos columnas del dashboard*/
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: 1.6fr 1fr;
+    gap: var(--space-5);
+}
+
+@media (max-width: 900px) {
+    .dashboard-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.card-title {
+    font-family: var(--font-heading);
+    font-size: 1.1rem;
+    color: var(--color-teal-900);
+    margin-bottom: var(--space-4);
+}
+
+/* Tarjetas*/
+.card {
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-card);
+}
+
+.card-body {
+    padding: var(--space-5);
+}

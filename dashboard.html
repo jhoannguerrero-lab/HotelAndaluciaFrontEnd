@@ -18,94 +18,94 @@
 </head>
 
 <body>
-    <div>
-        <aside>
-            <div>
-                <div aria-hidden="true">HA</div>
-                <div>Hotel Andalucia<small>Panel administrativo</small></div>
+    <div class="app-shell">
+        <aside class="sidebar">
+            <div class="sidebar__brand">
+                <div class="sidebar__logo" aria-hidden="true">HA</div>
+                <div class="sidebar__title">Hotel Andalucia<small>Panel administrativo</small></div>
             </div>
 
-            <p>Principal</p>
-            <nav aria-label="Menú principal">
-                <a href="dashboard.html"><span>🏠</span>
+            <p class="sidebar__section-label">Principal</p>
+            <nav class="nav-menu" aria-label="Menú principal">
+                <a class="nav-menu__link is-active" href="dashboard.html"><span class="nav-menu__icon">🏠</span>
                     Dashboard</a>
             </nav>
 
-            <p>Habitaciones</p>
-            <nav aria-label="Menú de habitaciones">
-                <a href="habitaciones.html"><span>🛏️</span> Ver
+            <p class="sidebar__section-label">Habitaciones</p>
+            <nav class="nav-menu" aria-label="Menú de habitaciones">
+                <a class="nav-menu__link" href="habitaciones.html"><span class="nav-menu__icon">🛏️</span> Ver
                     habitaciones</a>
-                <a href="registrar-habitacion.html"><span>➕</span>
+                <a class="nav-menu__link" href="registrar-habitacion.html"><span class="nav-menu__icon">➕</span>
                     Registrar habitación</a>
             </nav>
 
-            <p>Reservas</p>
-            <nav aria-label="Menú de reservas">
-                <a href="reservas.html"><span>📖</span> Ver reservas</a>
-                <a href="registrar-reserva.html"><span>➕</span> Registrar
+            <p class="sidebar__section-label">Reservas</p>
+            <nav class="nav-menu" aria-label="Menú de reservas">
+                <a class="nav-menu__link" href="reservas.html"><span class="nav-menu__icon">📖</span> Ver reservas</a>
+                <a class="nav-menu__link" href="registrar-reserva.html"><span class="nav-menu__icon">➕</span> Registrar
                     reserva</a>
             </nav>
 
-            <div>
-                <div>
-                    <div aria-hidden="true">CV</div>
-                    <div>Carla Vásquez<br><small>Recepción</small></div>
+            <div class="sidebar__footer">
+                <div class="sidebar__user">
+                    <div class="sidebar__avatar" aria-hidden="true">CV</div>
+                    <div class="sidebar__user-info">Carla Vásquez<br><small>Recepción</small></div>
                 </div>
-                <a href="login.html">Cerrar sesión</a>
+                <a class="logout-link" href="login.html">Cerrar sesión</a>
             </div>
         </aside>
-        <div>
+        <div class="main-content">
 
-            <header>
-                <span>Panel administrativo / Dashboard</span>
+            <header class="topbar">
+                <span class="topbar__breadcrumb">Panel administrativo / Dashboard</span>
                 <a href="registrar-reserva.html" class="btn btn-accent btn-sm">+ Nueva reserva</a>
             </header>
 
-            <main>
-                <div>
+            <main class="page-body">
+                <div class="page-header">
                     <div>
                         <h1>Buen día, Carla</h1>
-                        <p>Este es el resumen de operación del Hotel Bahía del Sol para hoy, sábado 5 de septiembre de
+                        <p>Este es el resumen de operación del Hotel Andalucía hoy, sábado 5 de septiembre de
                             2026.</p>
                     </div>
                 </div>
 
-                <div>
+                <div class="dashboard-grid">
 
-                    <section aria-label="Ocupación por tipo de habitación">
-                        <div>
-                            <h2>Ocupación por tipo de habitación</h2>
-                            <div>
-                                <div>
-                                    <div>
+                    <section class="card" aria-label="Ocupación por tipo de habitación">
+                        <div class="card-body">
+                            <h2 class="card-title">Ocupación por tipo de habitación</h2>
+                            <div class="progress-list">
+                                <div class="progress-item">
+                                    <div class="progress-item__labels">
                                         <span>Individual</span><span>80%</span>
                                     </div>
-                                    <div>
-                                        <div style="width: 80%;"></div>
+                                    <div class="progress-track">
+                                        <div class="progress-fill" style="width: 80%;"></div>
                                     </div>
                                 </div>
-                                <div>
-                                    <div>
+                                <div class="progress-item">
+                                    <div class="progress-item__labels">
                                         <span>Individual con baño privado</span><span>60%</span>
                                     </div>
-                                    <div>
-                                        <div style="width: 60%;"></div>
+                                    <div class="progress-track">
+                                        <div class="progress-fill" style="width: 60%;"></div>
                                     </div>
                                 </div>
-                                <div>
-                                    <div>
+                                <div class="progress-item">
+                                    <div class="progress-item__labels">
                                         <span>Doble</span><span>45%</span>
                                     </div>
-                                    <div>
-                                        <div style="width: 45%;"></div>
+                                    <div class="progress-track">
+                                        <div class="progress-fill" style="width: 45%;"></div>
                                     </div>
                                 </div>
-                                <div>
-                                    <div>
+                                <div class="progress-item">
+                                    <div class="progress-item__labels">
                                         <span>Suite Familiar</span><span>30%</span>
                                     </div>
-                                    <div>
-                                        <div style="width: 30%;"></div>
+                                    <div class="progress-track">
+                                        <div class="progress-fill" style="width: 30%;"></div>
                                     </div>
                                 </div>
                             </div>
@@ -115,9 +115,9 @@
                 </div>
             </main>
 
-            <footer>
-                <span>© 2026 Hotel Bahía del Sol</span>
-                <span>Trabajo académico · Desarrollo Web con HTML y CSS</span>
+            <footer class="site-footer">
+                <span>© 2026 Hotel andalucia. Todos los derechos reservados.</span>
+                </span>
             </footer>
 
         </div>
