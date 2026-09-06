@@ -1,0 +1,133 @@
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-2);
+    padding: var(--space-3) var(--space-5);
+    border-radius: var(--radius-sm);
+    border: 1px solid transparent;
+    font-size: 0.92rem;
+    font-weight: 600;
+    transition: transform 0.1s ease, box-shadow 0.15s ease, background-color 0.15s ease;
+}
+
+.btn:active {
+    transform: translateY(1px);
+}
+
+.btn-primary {
+    background-color: var(--color-teal-800);
+    color: var(--color-sand-100);
+}
+
+.btn-primary:hover {
+    background-color: var(--color-teal-700);
+}
+
+.btn-accent {
+    background-color: var(--color-brass-500);
+    color: var(--color-teal-900);
+}
+
+.btn-accent:hover {
+    background-color: var(--color-brass-400);
+}
+
+.btn-outline {
+    background-color: transparent;
+    border-color: var(--color-border);
+    color: var(--color-text);
+}
+
+.btn-outline:hover {
+    border-color: var(--color-teal-700);
+    color: var(--color-teal-700);
+}
+
+.btn-block {
+    width: 100%;
+}
+
+.btn-sm {
+    padding: var(--space-1) var(--space-3);
+    font-size: 0.8rem;
+}
+
+.form-card {
+    max-width: 760px;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-4) var(--space-5);
+}
+
+.form-grid .field-full {
+    grid-column: 1 / -1;
+}
+
+@media (max-width: 700px) {
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 700px) {
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+}
+
+.field label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--color-teal-900);
+}
+
+.field .hint {
+    font-size: 0.78rem;
+    color: var(--color-text-muted);
+    font-weight: 400;
+}
+
+.field input,
+.field select,
+.field textarea {
+    padding: var(--space-3);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    background-color: var(--color-bg);
+}
+
+.field input:focus,
+.field select:focus,
+.field textarea:focus {
+    border-color: var(--color-teal-700);
+    background-color: var(--color-surface);
+}
+
+.field textarea {
+    resize: vertical;
+    min-height: 90px;
+}
+
+fieldset.field-group {
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    padding: var(--space-4);
+    grid-column: 1 / -1;
+}
+
+fieldset.field-group legend {
+    padding: 0 var(--space-2);
+    font-weight: 600;
+    color: var(--color-teal-900);
+    font-size: 0.9rem;
+}
