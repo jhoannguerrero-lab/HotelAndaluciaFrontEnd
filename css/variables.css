@@ -1,25 +1,27 @@
 :root {
-    /* Paleta - Hotel */
-    --color-teal-900: #0c2f2b;
-    --color-teal-800: #123f3a;
-    --color-teal-700: #57411a;
-    --color-brass-500: #c08a3e;
-    --color-brass-400: #d6a75f;
-    --color-sand-100: #f4f1ea;
-    --color-bg: #faf9f6;
+    /* Paleta - Hotel Andalucía: azul añil de puertas y ventanas de
+       los pueblos blancos, encalado de las fachadas y terracota
+       de las tejas de barro cocido. */
+    --color-blue-900: #10304a;
+    --color-blue-800: #1c4a70;
+    --color-blue-700: #2c6a96;
+    --color-terracotta-500: #c1652f;
+    --color-terracotta-400: #d68249;
+    --color-whitewash-100: #f5f1e8;
+    --color-bg: #faf8f3;
     --color-surface: #ffffff;
-    --color-text: #1e2a28;
-    --color-text-muted: #5c6b68;
-    --color-border: #e2ded3;
+    --color-text: #23201b;
+    --color-text-muted: #6b6357;
+    --color-border: #e6ddc9;
 
-    --color-success-bg: #e6f4ea;
-    --color-success-text: #1e6b3a;
-    --color-warning-bg: #fbeed9;
+    --color-success-bg: #e6f2e6;
+    --color-success-text: #2f6b34;
+    --color-warning-bg: #faf0d9;
     --color-warning-text: #8a5a10;
-    --color-danger-bg: #fbe7e6;
-    --color-danger-text: #a3312a;
-    --color-info-bg: #e5f0f2;
-    --color-info-text: #1a5750;
+    --color-danger-bg: #fbe8e4;
+    --color-danger-text: #a3402a;
+    --color-info-bg: #e6eef4;
+    --color-info-text: #1c4a70;
 
     /* Tipografía */
     --font-heading: "Fraunces", Georgia, "Times New Roman", serif;
@@ -39,7 +41,7 @@
     --radius-sm: 6px;
     --radius-md: 10px;
     --radius-lg: 16px;
-    --shadow-card: 0 1px 3px rgba(12, 47, 43, 0.08), 0 8px 24px rgba(12, 47, 43, 0.06);
+    --shadow-card: 0 1px 3px rgba(16, 48, 74, 0.08), 0 8px 24px rgba(16, 48, 74, 0.06);
 
     /* Layout */
     --sidebar-width: 250px;

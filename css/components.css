@@ -16,21 +16,21 @@
 }
 
 .btn-primary {
-    background-color: var(--color-teal-800);
-    color: var(--color-sand-100);
+    background-color: var(--color-blue-800);
+    color: var(--color-whitewash-100);
 }
 
 .btn-primary:hover {
-    background-color: var(--color-teal-700);
+    background-color: var(--color-blue-700);
 }
 
 .btn-accent {
-    background-color: var(--color-brass-500);
-    color: var(--color-teal-900);
+    background-color: var(--color-terracotta-500);
+    color: var(--color-blue-900);
 }
 
 .btn-accent:hover {
-    background-color: var(--color-brass-400);
+    background-color: var(--color-terracotta-400);
 }
 
 .btn-outline {
@@ -40,8 +40,8 @@
 }
 
 .btn-outline:hover {
-    border-color: var(--color-teal-700);
-    color: var(--color-teal-700);
+    border-color: var(--color-blue-700);
+    color: var(--color-blue-700);
 }
 
 .btn-block {
@@ -83,7 +83,7 @@
 .field label {
     font-size: 0.85rem;
     font-weight: 600;
-    color: var(--color-teal-900);
+    color: var(--color-blue-900);
 }
 
 .field .hint {
@@ -104,7 +104,7 @@
 .field input:focus,
 .field select:focus,
 .field textarea:focus {
-    border-color: var(--color-teal-700);
+    border-color: var(--color-blue-700);
     background-color: var(--color-surface);
 }
 
@@ -123,7 +123,7 @@ fieldset.field-group {
 fieldset.field-group legend {
     padding: 0 var(--space-2);
     font-weight: 600;
-    color: var(--color-teal-900);
+    color: var(--color-blue-900);
     font-size: 0.9rem;
 }
 
@@ -167,7 +167,7 @@ fieldset.field-group legend {
 .card-title {
     font-family: var(--font-heading);
     font-size: 1.1rem;
-    color: var(--color-teal-900);
+    color: var(--color-blue-900);
     margin-bottom: var(--space-4);
 }
 
@@ -208,7 +208,7 @@ fieldset.field-group legend {
 .stat-card__value {
     font-family: var(--font-heading);
     font-size: 1.9rem;
-    color: var(--color-teal-900);
+    color: var(--color-blue-900);
 }
 
 .stat-card__delta {
@@ -258,7 +258,7 @@ fieldset.field-group legend {
     text-transform: uppercase;
     letter-spacing: 0.05em;
     color: var(--color-text-muted);
-    background-color: var(--color-sand-100);
+    background-color: var(--color-whitewash-100);
     padding: var(--space-3) var(--space-4);
     border-bottom: 1px solid var(--color-border);
 }
@@ -274,7 +274,7 @@ fieldset.field-group legend {
 }
 
 .data-table tbody tr:hover {
-    background-color: var(--color-sand-100);
+    background-color: var(--color-whitewash-100);
 }
 
 .cell-muted {

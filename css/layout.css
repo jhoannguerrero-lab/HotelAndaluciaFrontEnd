@@ -8,8 +8,8 @@
 .sidebar {
     width: var(--sidebar-width);
     flex-shrink: 0;
-    background-color: var(--color-teal-900);
-    color: var(--color-sand-100);
+    background-color: var(--color-blue-900);
+    color: var(--color-whitewash-100);
     display: flex;
     flex-direction: column;
     padding: var(--space-5) var(--space-4);
@@ -28,13 +28,13 @@
     width: 40px;
     height: 40px;
     border-radius: var(--radius-sm);
-    background: linear-gradient(135deg, var(--color-brass-400), var(--color-brass-500));
+    background: linear-gradient(135deg, var(--color-terracotta-400), var(--color-terracotta-500));
     display: flex;
     align-items: center;
     justify-content: center;
     font-family: var(--font-heading);
     font-weight: 600;
-    color: var(--color-teal-900);
+    color: var(--color-blue-900);
 }
 
 .sidebar__title {
@@ -48,7 +48,7 @@
     font-family: var(--font-body);
     font-size: 0.7rem;
     letter-spacing: 0.04em;
-    color: var(--color-brass-400);
+    color: var(--color-terracotta-400);
 }
 
 .sidebar__section-label {
@@ -81,8 +81,8 @@
 }
 
 .nav-menu__link.is-active {
-    background-color: var(--color-brass-500);
-    color: var(--color-teal-900);
+    background-color: var(--color-terracotta-500);
+    color: var(--color-blue-900);
     font-weight: 600;
 }
 
@@ -108,7 +108,7 @@
     width: 36px;
     height: 36px;
     border-radius: 50%;
-    background-color: var(--color-teal-700);
+    background-color: var(--color-blue-700);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -179,7 +179,7 @@
 .page-header h1 {
     font-family: var(--font-heading);
     font-size: 1.7rem;
-    color: var(--color-teal-900);
+    color: var(--color-blue-900);
 }
 
 .page-header p {

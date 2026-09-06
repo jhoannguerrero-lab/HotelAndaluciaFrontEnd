@@ -6,9 +6,9 @@
 
 .login-showcase {
     background:
-        linear-gradient(160deg, rgba(12, 47, 43, 0.88), rgba(12, 47, 43, 0.72)),
-        radial-gradient(circle at 30% 20%, var(--color-teal-700), var(--color-teal-900) 65%);
-    color: var(--color-sand-100);
+        linear-gradient(160deg, rgba(16, 48, 74, 0.88), rgba(16, 48, 74, 0.72)),
+        radial-gradient(circle at 30% 20%, var(--color-blue-700), var(--color-blue-900) 65%);
+    color: var(--color-whitewash-100);
     padding: var(--space-8) var(--space-7);
     display: flex;
     flex-direction: column;
@@ -25,13 +25,13 @@
     width: 46px;
     height: 46px;
     border-radius: var(--radius-sm);
-    background: linear-gradient(135deg, var(--color-brass-400), var(--color-brass-500));
+    background: linear-gradient(135deg, var(--color-terracotta-400), var(--color-terracotta-500));
     display: flex;
     align-items: center;
     justify-content: center;
     font-family: var(--font-heading);
     font-weight: 600;
-    color: var(--color-teal-900);
+    color: var(--color-blue-900);
     font-size: 1.2rem;
 }
 
@@ -71,7 +71,7 @@
 }
 
 .login-showcase__list .dot {
-    color: var(--color-brass-400);
+    color: var(--color-terracotta-400);
 }
 
 .login-panel {
@@ -90,7 +90,7 @@
 .login-box h2 {
     font-family: var(--font-heading);
     font-size: 1.5rem;
-    color: var(--color-teal-900);
+    color: var(--color-blue-900);
     margin-bottom: var(--space-1);
 }
 
@@ -117,7 +117,7 @@
 }
 
 .login-form__row a {
-    color: var(--color-teal-700);
+    color: var(--color-blue-700);
     font-weight: 600;
 }
 
@@ -156,13 +156,13 @@
 .progress-track {
     height: 8px;
     border-radius: 999px;
-    background-color: var(--color-sand-100);
+    background-color: var(--color-whitewash-100);
     overflow: hidden;
 }
 
 .progress-fill {
     height: 100%;
-    background-color: var(--color-brass-500);
+    background-color: var(--color-terracotta-500);
     border-radius: 999px;
 }
 
