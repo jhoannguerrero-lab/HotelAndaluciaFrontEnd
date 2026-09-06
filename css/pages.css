@@ -138,3 +138,30 @@
         display: none;
     }
 }
+
+/* barra de progreso  */
+.progress-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+}
+
+.progress-item__labels {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.85rem;
+    margin-bottom: var(--space-2);
+}
+
+.progress-track {
+    height: 8px;
+    border-radius: 999px;
+    background-color: var(--color-sand-100);
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    background-color: var(--color-brass-500);
+    border-radius: 999px;
+}

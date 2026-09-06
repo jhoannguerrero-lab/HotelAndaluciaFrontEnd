@@ -131,3 +131,168 @@ fieldset.field-group legend {
     color: var(--color-teal-900);
     font-size: 0.9rem;
 }
+
+/* layout de dos columnas del dashboard*/
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: 1.6fr 1fr;
+    gap: var(--space-5);
+}
+
+@media (max-width: 900px) {
+    .dashboard-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.card-title {
+    font-family: var(--font-heading);
+    font-size: 1.1rem;
+    color: var(--color-teal-900);
+    margin-bottom: var(--space-4);
+}
+
+/* Tarjetas*/
+.card {
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-card);
+}
+
+.card-body {
+    padding: var(--space-5);
+}
+
+/*KPI*/
+.stat-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--space-4);
+    margin-bottom: var(--space-6);
+}
+
+.stat-card {
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    padding: var(--space-5);
+    box-shadow: var(--shadow-card);
+}
+
+.stat-card__label {
+    font-size: 0.8rem;
+    color: var(--color-text-muted);
+    margin-bottom: var(--space-2);
+}
+
+.stat-card__value {
+    font-family: var(--font-heading);
+    font-size: 1.9rem;
+    color: var(--color-teal-900);
+}
+
+.stat-card__delta {
+    font-size: 0.78rem;
+    margin-top: var(--space-2);
+    color: var(--color-success-text);
+}
+
+.stat-card__delta.is-negative {
+    color: var(--color-danger-text);
+}
+
+@media (max-width: 900px) {
+    .stat-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 560px) {
+    .stat-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/*  Tablas */
+.table-wrapper {
+    overflow-x: auto;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    background-color: var(--color-surface);
+}
+
+.data-table {
+    min-width: 100%;
+}
+
+.data-table caption {
+    text-align: left;
+    padding: var(--space-4) var(--space-5) 0;
+    font-size: 0.85rem;
+    color: var(--color-text-muted);
+}
+
+.data-table thead th {
+    text-align: left;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-text-muted);
+    background-color: var(--color-sand-100);
+    padding: var(--space-3) var(--space-4);
+    border-bottom: 1px solid var(--color-border);
+}
+
+.data-table tbody td {
+    padding: var(--space-3) var(--space-4);
+    border-bottom: 1px solid var(--color-border);
+    font-size: 0.9rem;
+}
+
+.data-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.data-table tbody tr:hover {
+    background-color: var(--color-sand-100);
+}
+
+.cell-muted {
+    color: var(--color-text-muted);
+}
+
+.cell-actions {
+    display: flex;
+    gap: var(--space-2);
+    white-space: nowrap;
+}
+
+/*Badges de estado*/
+.badge {
+    display: inline-block;
+    padding: var(--space-1) var(--space-3);
+    border-radius: 999px;
+    font-size: 0.72rem;
+    font-weight: 600;
+}
+
+.badge-success {
+    background-color: var(--color-success-bg);
+    color: var(--color-success-text);
+}
+
+.badge-warning {
+    background-color: var(--color-warning-bg);
+    color: var(--color-warning-text);
+}
+
+.badge-danger {
+    background-color: var(--color-danger-bg);
+    color: var(--color-danger-text);
+}
+
+.badge-info {
+    background-color: var(--color-info-bg);
+    color: var(--color-info-text);
+}
