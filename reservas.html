@@ -75,7 +75,7 @@
                 <form class="filter-bar" aria-label="Filtros de reservas">
                     <div class="field">
                         <label for="filtro-hab">Habitación</label>
-                        <select id="filtro-hab" name="habitacion">
+                        <select id="filtro-hab" name="habitacion" title="Filtrar reservas por habitación">
                             <option value="">Todas</option>
                             <option value="101">101 · Individual</option>
                             <option value="203">203 · Doble</option>
@@ -84,7 +84,7 @@
                     </div>
                     <div class="field">
                         <label for="filtro-estado-res">Estado</label>
-                        <select id="filtro-estado-res" name="estado">
+                        <select id="filtro-estado-res" name="estado" title="Filtrar reservas por estado">
                             <option value="">Todos</option>
                             <option value="confirmada">Confirmada</option>
                             <option value="pendiente">Pendiente</option>
@@ -92,7 +92,7 @@
                             <option value="cancelada">Cancelada</option>
                         </select>
                     </div>
-                    <button type="submit" class="btn btn-outline">Filtrar</button>
+                    <button type="submit" class="btn btn-outline" title="Aplicar filtros de reservas">Filtrar</button>
                 </form>
 
                 <section class="table-wrapper" aria-label="Tabla de reservas">

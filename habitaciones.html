@@ -74,7 +74,7 @@
                 <form class="filter-bar" aria-label="Filtros de habitaciones">
                     <div class="field">
                         <label for="filtro-tipo">Tipo</label>
-                        <select id="filtro-tipo" name="tipo">
+                        <select id="filtro-tipo" name="tipo" title="Filtrar habitaciones por tipo">
                             <option value="">Todos</option>
                             <option value="individual">Individual</option>
                             <option value="doble">Individual con baño privado</option>
@@ -84,14 +84,14 @@
                     </div>
                     <div class="field">
                         <label for="filtro-estado">Estado</label>
-                        <select id="filtro-estado" name="estado">
+                        <select id="filtro-estado" name="estado" title="Filtrar habitaciones por estado">
                             <option value="">Todos</option>
                             <option value="disponible">Disponible</option>
                             <option value="ocupada">Ocupada</option>
                             <option value="mantenimiento">Mantenimiento</option>
                         </select>
                     </div>
-                    <button type="submit" class="btn btn-outline">Filtrar</button>
+                    <button type="submit" class="btn btn-outline" title="Aplicar filtros de habitaciones">Filtrar</button>
                 </form>
 
                 <section class="table-wrapper" aria-label="Tabla de habitaciones">
@@ -117,8 +117,8 @@
                                 <td>Bs 220</td>
                                 <td><span class="badge badge-danger">Ocupada</span></td>
                                 <td class="cell-actions">
-                                    <a href="#" class="btn btn-outline btn-sm">Editar</a>
-                                    <a href="#" class="btn btn-outline btn-sm">Eliminar</a>
+                                    <a href="#" class="btn btn-outline btn-sm" title="Editar habitación">Editar</a>
+                                    <a href="#" class="btn btn-outline btn-sm" title="Eliminar habitación">Eliminar</a>
                                 </td>
                             </tr>
                             <tr>
