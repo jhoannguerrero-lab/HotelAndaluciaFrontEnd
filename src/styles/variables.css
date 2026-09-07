@@ -1,0 +1,42 @@
+/* variables.css
+   Tokens de diseño — misma paleta de Andalucía del proyecto 1
+   (azul añil, terracota, encalado). */
+
+:root {
+  --color-blue-900: #10304a;
+  --color-blue-800: #1c4a70;
+  --color-blue-700: #2c6a96;
+  --color-terracotta-500: #c1652f;
+  --color-terracotta-400: #d68249;
+  --color-whitewash-100: #f5f1e8;
+  --color-bg: #faf8f3;
+  --color-surface: #ffffff;
+  --color-text: #23201b;
+  --color-text-muted: #6b6357;
+  --color-border: #e6ddc9;
+
+  --color-success-bg: #e6f2e6;
+  --color-success-text: #2f6b34;
+  --color-warning-bg: #faf0d9;
+  --color-warning-text: #8a5a10;
+  --color-danger-bg: #fbe8e4;
+  --color-danger-text: #a3402a;
+  --color-info-bg: #e6eef4;
+  --color-info-text: #1c4a70;
+
+  --font-heading: "Fraunces", Georgia, serif;
+  --font-body: "Inter", "Segoe UI", Arial, sans-serif;
+
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --shadow-card: 0 1px 3px rgba(16, 48, 74, 0.08), 0 8px 24px rgba(16, 48, 74, 0.06);
+
+  --sidebar-width: 250px;
+}
