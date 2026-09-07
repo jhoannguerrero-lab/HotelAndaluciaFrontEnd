@@ -5,6 +5,7 @@ import 'normalize.css'
 import './styles/variables.css'
 import './styles/base.css'
 import './styles/layout.css'
+import './styles/pages.css'
 
 import App from './App.jsx'
 
