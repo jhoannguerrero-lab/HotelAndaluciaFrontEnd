@@ -20,18 +20,13 @@ export const router = createBrowserRouter([
     element: <LoginPage />,
   },
   {
-    // Todas las rutas hijas pasan por ProtectedLayout: si no hay
-    // sesion, redirige a /login. Si hay sesion, dibuja el sidebar +
-    // topbar y renderiza la pagina pedida dentro.
+
     element: <ProtectedLayout />,
     children: [
       { path: '/dashboard', element: <DashboardPage /> },
       { path: '/habitaciones', element: <HabitacionesPage /> },
       { path: '/reservas', element: <ReservasPage /> },
       {
-        // Estas dos ademas requieren rol GESTOR (RequireGestor
-        // envuelve por dentro de ProtectedLayout, asi que ya se sabe
-        // que hay sesion, solo falta validar el rol).
         element: <RequireGestor />,
         children: [
           { path: '/habitaciones/nueva', element: <HabitacionFormPage /> },
