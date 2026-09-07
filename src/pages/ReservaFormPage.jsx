@@ -29,8 +29,6 @@ export default function ReservaFormPage() {
   const [error, setError] = useState(null)
   const [guardando, setGuardando] = useState(false)
 
-  // Carga el catalogo de habitaciones (para el <select>) y, si es
-  // edicion, tambien los datos actuales de la reserva.
   useEffect(() => {
     listarHabitaciones(token).then(setHabitaciones).catch((err) => setError(err.message))
 
