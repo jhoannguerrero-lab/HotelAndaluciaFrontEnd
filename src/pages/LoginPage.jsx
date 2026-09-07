@@ -12,8 +12,6 @@ export default function LoginPage() {
   const [error, setError] = useState(null)
   const [cargando, setCargando] = useState(false)
 
-  // Si ya hay una sesion activa (ej. el usuario vuelve a /login a
-  // mano), no tiene sentido mostrarle el formulario de nuevo.
   if (isAuthenticated) {
     return <Navigate to="/dashboard" replace />
   }
